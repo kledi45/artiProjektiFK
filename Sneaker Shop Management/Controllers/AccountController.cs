@@ -46,8 +46,6 @@ namespace Sneaker_Shop_Management.Controllers
                 ModelState.AddModelError("", error.Description);  
             }
 
-            
-
         }   
             return View(model);
         }
