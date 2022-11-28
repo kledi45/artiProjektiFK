@@ -55,12 +55,13 @@ namespace Sneaker_Shop_Management
 
             app.UseAuthorization();
             app.UseAuthentication();
-
+            app.UseStaticFiles();
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Account}/{action=Login}/{id?}");
                 endpoints.MapRazorPages();
             });
         }

@@ -314,6 +314,9 @@ namespace Sneaker_Shop_Management.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Sex")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

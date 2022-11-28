@@ -24,6 +24,7 @@ namespace Sneaker_Shop_Management.Models
         public string Type { get; set; }
         
         public double? BidPrice { get; set; }
+        public string? Description { get; set; }
 
     }
 }

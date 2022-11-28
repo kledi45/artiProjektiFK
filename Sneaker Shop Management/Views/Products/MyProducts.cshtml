@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Shoes>;
+
+@{
+    Layout = "_Layout";
+}
+
+<style>
+    .shoes-inline{
+        display:flex;
+        flex-wrap: wrap;
+    } 
+</style>
+<div class="content-wrapper">
+    <h4>My products</h4>
+    <div class="shoes-inline">
+        @foreach (var products in Model)
+        {
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="~/images/airjordan.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">@products.Type</h5>
+                        <p class="card-text">@products.Description</p>
+                        <p class="card-text">@products.BuyPrice</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    
+
+</div>
